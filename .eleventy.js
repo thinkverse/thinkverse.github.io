@@ -8,8 +8,6 @@ module.exports = function (config) {
 
   config.setLibrary('md', markdown);
 
-  config.addShortcode('version', () => String(Date.now()));
-
   config.addNunjucksFilter('cacheBust', cacheBust);
   config.addNunjucksFilter('concat', concat);
 
